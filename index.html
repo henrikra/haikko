@@ -4,15 +4,26 @@
     <title>Trigonometry</title>
   </head>
   <style>
-    #square {
-      background: red; 
+    .square {
       width: 50px; 
       height: 50px;
     }
+    .square--primary {
+      background: blue;
+    }
+
+    .square--secondary {
+      background: red;
+    }
+
+    .header {
+      margin-bottom: 100px;
+    }
   </style>
   <body>
-    <h1>Trigonometry</h1>
-    <div id="square" />
+    <h1 class="header">Trigonometry</h1>
+    <div id="square1" class="square square--primary" />
+    <div id="square2" class="square square--secondary" />
     <script src="main.js"></script>
   </body>
 </html>
