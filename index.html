@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>Trigonometry</title>
+    <meta charset="utf-8" />
   </head>
   <style>
+    body {
+      text-align: center;
+    }
     .square {
       width: 50px; 
       height: 50px;
@@ -17,20 +21,45 @@
     }
 
     .header {
-      margin-bottom: 100px;
     }
 
     .squares {
       justify-content: center;
       display: flex;
     }
+
+    .button-icon {
+      width: 50px;
+    }
+
+    #emojis {
+      display: none;
+    }
+
+    .emoji {
+      width: 100px;
+    }
+
+    #main-image {
+      display: block;
+      margin: 0 auto;
+    }
+
+    #reveal {
+      display: none;
+    }
   </style>
   <body>
-    <h1 class="header">Trigonometry</h1>
-    <div class="squares">
-      <div id="square1" class="square square--primary"></div>
-      <div id="square2" class="square square--secondary" /></div>
+    <h1 id="main-text" class="header">Tickets to Haikko's Mansion</h1>
+    <button id="start-btn">
+      Get tickets here <img class="button-icon" src="http://www.pngall.com/wp-content/uploads/2016/06/Love-Hearts-Eyes-Emoji-PNG.png" />
+    </button>
+    <img id="main-image" src="http://www.haikko.fi/sites/default/files/styles/gallery_full/public/media/Kylpyla/lilychristina_photography_pieni-67.jpg?itok=Z7pcDH83" />
+    <div id="emojis" class="squares">
+      <img id="emoji1" class="emoji" src="http://www.pngall.com/wp-content/uploads/2016/06/Smiling-Face-with-Sunglasses-Cool-Emoji-PNG.png" />
+      <img id="emoji2" class="emoji" src="http://www.pngall.com/wp-content/uploads/2016/06/Wink-Emoji-PNG.png" />
     </div>
+    <h2 id="reveal">HAHAHHAH HUIJASIN, Mennäänki oikeasti Krakovaan 13-15 päivä tammikuuta</h2>
     <script src="main.js"></script>
   </body>
 </html>
